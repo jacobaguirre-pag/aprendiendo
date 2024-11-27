@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"> <!-- Define el conjunto de caracteres, en este caso UTF-8 para soportar caracteres especiales. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura el diseño adaptable para dispositivos móviles. -->
+    <title>Formulario Ejemplo</title> <!-- Título de la página que se muestra en la pestaña del navegador. -->
+    <link rel="stylesheet" href="styles.css"> <!-- Vincula el archivo CSS externo con el diseño del formulario. -->
+</head>
+<body>
+    <div class="form-container"> <!-- Contenedor principal para centrar y estilizar el formulario. -->
+        <h1>Formulario de Ejemplo</h1> <!-- Título del formulario. -->
+        <form action="#" method="POST"> <!-- Define el inicio del formulario; envía datos con POST a la misma página (acción "#"). -->
+
+            <!-- Etiqueta y campo de texto corto -->
+            <label for="nombre"><img src="img/fami.svg">Nombre:</label> <!-- Asocia el texto "Nombre" al campo con id="nombre". -->
+            <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre completo" required> 
+
+            <label for="nombre"><img src="img/correo.svg">Correo electronico</label> <!-- Asocia el texto "Nombre" al campo con id="nombre". -->
+            <input type="text" id="correo electronico" name="Correo electronico" placeholder="Ejemplo@gmail.com" required>
+
+
+
+            
+                
+             <div class="radio-group">
+
+                    
+                
+              <fieldset>
+
+                <label>Modalidad de curso</label>
+
+               <label ><input type="radio"  name="mode" value="online" required>online</label>
+                   
+                   
+               <label ><input type="radio" name="mode" value="Presencial" required>Presencial</label>
+             </div>
+              <fieldset>
+             <div class="checkbox-group">
+
+
+
+                <label>Temas de interes  :</label> 
+
+                
+                <label ><input type="checkbox" id="deporte" name="intereses" value="deporte">Frontend</label>
+                   <!-- Casilla para "deporte". -->
+                    
+                <label><input type="checkbox" id="musica" name="intereses" value="musica">Backend</label> 
+                    <!-- Casilla para "música". -->
+                   
+                <label ><input type="checkbox" id="tecnologia" name="intereses" value="tecnologia">Fullstac</label> 
+             </div>
+              </fieldset>       
+            
+
+
+
+
+            <label for="pais" ><img src="img/img.svg">Selecciona tu curso</label> 
+
+            <select id="pais" name="pais"> 
+                
+                <option value="mexico">Html basico</option>             
+                <option value="espana">Ingles</option>            
+                <option value="argentina">Matematica</option>       
+                <option value="colombia">sociales</option>         
+            </select>
+
+            <label for="mensaje">Mensaje:</label> <!-- Asocia el texto "Mensaje" al área de texto con id="mensaje". -->
+            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí"></textarea> 
+
+            <div class="jacob">
+            <!-- Botón de envío -->
+
+            <button class="mr" type="submit">Enviar</button>  
+            <button class="jk" type="submit">Limpiar</button>
+           <!-- Botón para enviar el formulario. -->
+            </div>
+        </form>
+    </div>
+</body>
+</html>
